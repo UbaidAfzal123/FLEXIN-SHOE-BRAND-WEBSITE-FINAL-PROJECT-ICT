@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: var(--bg-color);
+  color: #000000;
+  min-height: 100vh;
+  
+}
+.contact-section {
+  padding: 40px 16px 20px;
+  text-align: center;
+}
+.contact-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact-box h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: var(--hero-content);
+}
+.contact-box p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: var(--hero-content);
+}
+.contact-form {
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--hero-content);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: 1px solid #726c6c;
+  background: var(--hero-gradient);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 4px;
+  border: none;
+  border-radius: 30px;
+  background-color: pink;
+  color: #100d0d;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: rgb(242, 213, 218);
+}
+#bottom-container {
+  background-color: var(--bottom-container);
+  padding: 60px 16px 40px;
+  width: 100%;
+}
+.info-row {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.info-item {
+  flex: 1;
+  padding-top: 40px;
+}
+.info-icon {
+  width: 90px;
+  height: 90px;
+  margin: -70px auto 16px;
+  border-radius: 50%;
+  background: var(--hero-gradient);
+  color: #0e0b0b;
+  font-size: 40px;
+  line-height: 90px;
+}
+.info-item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.info-item p {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+@media (max-width: 800px) {
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section {
+    flex: 1;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+  .info-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  #bottom-container {
+    padding-top: 80px;
+    margin-top: auto;
+  }
+
+  .info-icon {
+    margin-top: -60px;
+  }
+}
