@@ -1,0 +1,125 @@
+.site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 60px 40px 20px 40px;
+  font-family: "Inter", sans-serif;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: var(--footer-text);
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--footer-gray);
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.footer-col a:hover {
+  color: var(--footer-text);
+  transform: translateX(2px);
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-brand span {
+  color: var(--accent-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.social-links a {
+  background-color: #333;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.3s;
+}
+.social-links a:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 11px;
+  color: var(--footer-gray);
+}
+
+.legal-links {
+  display: flex;
+  gap: 20px;
+}
+.legal-links a {
+  font-size: 11px;
+  color: var(--footer-gray);
+}
+.legal-links a:hover {
+  color: var(--footer-text);
+}
+
+@media (max-width: 552px) {
+  .site-footer {
+    padding: 40px 20px 20px 20px;
+    overflow: hidden;
+  }
+  .footer-col ul,h4 {
+    display: none;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .legal-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
