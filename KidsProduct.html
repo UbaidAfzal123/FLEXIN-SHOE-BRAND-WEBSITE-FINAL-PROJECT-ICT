@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexin | Where comfort meets power.</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/body.css" />
+    <link rel="stylesheet" href="../CSS/theme.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/Product.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Offer bar -->
+      <div class="offer">
+        <p>Free Shipping on order above $150 | Join Flexin Club</p>
+      </div>
+
+      <!-- Nav bar -->
+      <div id="nav-cont" class="nav-cont">
+        <div class="nav" id="nav">
+          <div class="logo">
+            <a href="/index.html">FLEXIN<span class="logo-sp">.</span></a>
+          </div>
+          <div class="links">
+            <nav>
+              <ul class="nav-links">
+                <li><a href="/index.html#new-drops">New Drops</a></li>
+                <li><a href="/index.html#men">Men</a></li>
+                <li><a href="/index.html#women">Women</a></li>
+                <li><a href="/index.html#kids">Kids</a></li>
+                <li>
+                  <a href="../Components/services.html" class="services-link">Services</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <button class="srch-i" onclick="toggleSearch()">
+              <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <button class="user-i">
+              <a href="./Components/contact.html"
+                ><i class="ph ph-phone"></i
+              ></a>
+            </button>
+            <button class="bag-i"><i class="ph ph-shopping-bag"></i></button>
+            <button class="moon-i" onclick="toggleTheme()" id="theme-i">
+              <i class="ph ph-moon" id="theme-icon"></i>
+            </button>
+            <!-- Hamburger Menu -->
+            <button class="HB-i" onclick="openMobileMenu()">
+              <span class="hb-sp"></span>
+              <span class="hb-sp"></span>
+              <span class="hb-sp"></span>
+            </button>
+          </div>
+        </div>
+        <div class="srch-cont" id="srch-cont">
+          <div class="srch-inner">
+            <i
+              class="ph ph-magnifying-glass"
+              style="font-size: 24px; margin-right: 15px; opacity: 0.5"
+            ></i>
+            <input
+              type="text"
+              class="srch-input"
+              id="srch-input"
+              placeholder="Search Flexin..."
+            />
+            <span class="search-close-small" onclick="toggleSearch()"
+              >Close</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mbl-menu" id="mbl-menu">
+        <div class="mbl-head">
+          <div class="logo" style="font-size: 24px">
+            FLEXIN<span class="logo-sp">.</span>
+          </div>
+          <button class="close-btn-mobile" onclick="closeMobileMenu()">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+
+        <div class="mbl-links">
+          <a href="./index.html#new-drops"
+            >New Drops <i class="ph ph-arrow-right"></i
+          ></a>
+          <a href="./index.html#men">Men <i class="ph ph-arrow-right"></i></a>
+          <a href="./index.html#women"
+            >Women <i class="ph ph-arrow-right"></i
+          ></a>
+          <a href="./index.html#kids">Kids <i class="ph ph-arrow-right"></i></a>
+          <a href="./index.html#services" style="color: var(--accent-color)"
+            >Services <i class="ph ph-fire"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="head">
+        <h1 class="head_h">Kids's Collection</h1>
+        <div class="path">Home/Collection/Kids</div>
+      </section>
+      <section>
+        <div class="sort">
+          <p>142 items</p>
+          <button class="sort-btn">
+            Sort by <i class="ph ph-caret-down"></i>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="product-grid-cont">
+          <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1605382165091-443eff32caf5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGtpZHMlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Mini Classic</h3>
+                  <p class="info-cat">Casual</p>
+                </div>
+                <div class="info-price">$60</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1678192568444-78b428b7cd1a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGtpZHMlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Sunshine Racer</h3>
+                  <p class="info-cat">Play</p>
+                </div>
+                <div class="info-price">$55</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1742390671765-c87aaed67ad8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZHMlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Blue Dash</h3>
+                  <p class="info-cat">School</p>
+                </div>
+                <div class="info-price">$65</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=500&q=80"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Color Pop</h3>
+                  <p class="info-cat">Fun</p>
+                </div>
+                <div class="info-price">$50</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=500&q=80"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Tiny Steps</h3>
+                  <p class="info-cat">Infant</p>
+                </div>
+                <div class="info-price">$45</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1507464098880-e367bc5d2c08?auto=format&fit=crop&w=500&q=80"
+                  alt="Shoe"
+                  class="product-img"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h3 class="info-title">Flexin Junior</h3>
+                  <p class="info-cat">Sport</p>
+                </div>
+                <div class="info-price">$70</div>
+              </div>
+              <div class="card-act">
+                <div class="qty">
+                  <button class="qty-btn">+</button>
+                  <span class="qty-disp">1</span>
+                  <button class="qty-btn">-</button>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Brand Column -->
+        <div class="footer-col footer-brand">
+          <h2>FLEXIN<span>.</span></h2>
+          <p
+            style="
+              font-size: 13px;
+              color: var(--footer-gray);
+              line-height: 1.6;
+              max-width: 250px;
+            "
+          >
+            Engineered for motion. Flexin brings you premium athletic wear
+            designed for performance and style.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Custom Styles</a></li>
+            <li><a href="#" style="color: var(--accent-color)">Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Column -->
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Flexin</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2024 Flexin, Inc. All Rights Reserved.
+        </div>
+        <div class="legal-links">
+          <a href="#">Guides</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../JS/theme.js"></script>
+  <script src="../JS/navbar.js"></script>
+</html>
