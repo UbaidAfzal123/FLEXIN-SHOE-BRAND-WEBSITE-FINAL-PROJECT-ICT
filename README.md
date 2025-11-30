@@ -116,7 +116,6 @@ Styled using contact.css
 
 **🎨 7. CSS System**
 
-Your project is cleanly organized into multiple styling modules:
 
 File	Purpose
 **body.css	Global reset + body styling
@@ -128,7 +127,6 @@ services.css	Services page design
 contact.css	Contact page layout
 theme.css	Dark/light theme system**
 
-This modular CSS keeps your project clean and scalable.
 
 **⚙️ 8. JavaScript Features (JS Folder)**
 
@@ -146,7 +144,6 @@ Opens/closes mobile menu smoothly.
 
 Sticky navbar, animations, responsive behavior.
 
-(Optional slideshow scripts if included)
 
 **📱 9. Fully Responsive Design**
 
