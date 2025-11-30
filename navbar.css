@@ -281,9 +281,6 @@ a.services-link::after {
     display: none;
   }
 
-  .user-i {
-    display: none;
-  }
 
   .HB-i {
     display: flex;
@@ -293,3 +290,4 @@ a.services-link::after {
     display: none;
   }
 }
+
