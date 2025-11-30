@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexin | Where comfort meets power.</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/body.css" />
+    <link rel="stylesheet" href="./CSS/theme.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Offer bar -->
+      <div class="offer">
+        <p>Free Shipping on order above $150 | Join Flexin Club</p>
+      </div>
+
+      <!-- Nav bar -->
+      <div id="nav-cont" class="nav-cont">
+        <div class="nav" id="nav">
+          <div class="logo">
+            <a href="index.html">FLEXIN<span class="logo-sp">.</span></a>
+          </div>
+          <div class="links">
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#new-drops">New Drops</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li>
+                  <a href="./Components/services.html" class="services-link"
+                    >Services</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <button class="srch-i" onclick="toggleSearch()">
+              <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <button class="user-i">
+              <a href="contact.html"
+                ><i class="ph ph-phone"></i
+              ></a>
+            </button>
+            <button class="bag-i"><i class="ph ph-shopping-bag"></i></button>
+            <button class="moon-i" onclick="toggleTheme()" id="theme-i">
+              <i class="ph ph-moon" id="theme-icon"></i>
+            </button>
+            <!-- Hamburger Menu -->
+            <button class="HB-i" onclick="openMobileMenu()">
+              <span class="hb-sp"></span>
+              <span class="hb-sp"></span>
+              <span class="hb-sp"></span>
+            </button>
+          </div>
+        </div>
+        <div class="srch-cont" id="srch-cont">
+          <div class="srch-inner">
+            <i
+              class="ph ph-magnifying-glass"
+              style="font-size: 24px; margin-right: 15px; opacity: 0.5"
+            ></i>
+            <input
+              type="text"
+              class="srch-input"
+              id="srch-input"
+              placeholder="Search Flexin..."
+            />
+            <span class="search-close-small" onclick="toggleSearch()"
+              >Close</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mbl-menu" id="mbl-menu">
+        <div class="mbl-head">
+          <div class="logo" style="font-size: 24px">
+            FLEXIN<span class="logo-sp">.</span>
+          </div>
+          <button class="close-btn-mobile" onclick="closeMobileMenu()">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+
+        <div class="mbl-links">
+          <a href="#new-drops"
+            >New Drops <i class="ph ph-arrow-right"></i
+          ></a>
+          <a href="#men">Men <i class="ph ph-arrow-right"></i></a>
+          <a href="#women"
+            >Women <i class="ph ph-arrow-right"></i
+          ></a>
+          <a href="#kids">Kids <i class="ph ph-arrow-right"></i></a>
+          <a href="#services" style="color: var(--accent-color)"
+            >Services <i class="ph ph-fire"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- HERO + SLIDESHOW -->
+
+      <section class="hero-section" id="hero">
+        <!-- <br><br><br><br><br><br><br><br> -->
+        <div class="hero-content">
+          <div class="hero-text">
+            <br /><br /><br /><br />
+            <h1>Step into Comfort &amp; Power</h1>
+            <p>
+              Discover premium sneakers designed for everyday comfort, intense
+              workouts, and everything in between.
+            </p>
+            <div class="hero-buttons">
+              <a href="#new-drops" class="btn-primary">Shop New Arrivals</a>
+              <a href="#men" class="btn-outline">View Best Sellers</a>
+            </div>
+          </div>
+
+          <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+              <img
+                src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg"
+                alt="Black running shoe"
+              />
+              <div class="slide-caption">
+                FlexRun X — built for speed and comfort.
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+              <img
+                src="https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg"
+                alt="White sneaker"
+              />
+              <div class="slide-caption">
+                StreetFlex Pro — everyday streetwear style.
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+              <img
+                src="https://images.pexels.com/photos/19090/pexels-photo.jpg"
+                alt="Colorful sports shoes"
+              />
+              <div class="slide-caption">
+                ColorRush — make every step stand out.
+              </div>
+            </div>
+
+            <!-- Slide controls -->
+            <button class="slide-btn prev" id="prev-slide">&#10094;</button>
+            <button class="slide-btn next" id="next-slide">&#10095;</button>
+
+            <!-- Dots -->
+            <div class="slide-dots" id="slide-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small info row under slideshow -->
+        <div class="hero-features">
+          <div class="feature-item">
+            <i class="ph ph-truck"></i>
+            <span>Free shipping above $150</span>
+          </div>
+          <div class="feature-item">
+            <i class="ph ph-arrow-counter-clockwise"></i>
+            <span>30-day easy returns</span>
+          </div>
+          <div class="feature-item">
+            <i class="ph ph-star"></i>
+            <span>4.8★ rated by 10k+ customers</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW DROPS SECTION -->
+      <section class="section" id="new-drops">
+        <div class="section-header">
+          <h2>New Drops</h2>
+          <p>Fresh styles just landed in store.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/44/89/7d/44897df777c4ef703d80c241297283cc.jpg"
+              alt="Black and red running shoe"
+            />
+            <div class="card-body">
+              <h3>FlexBolt Runner</h3>
+              <p>Lightweight running shoe with extra heel support.</p>
+              <button class="card-btn">View Details</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/84/ac/cd/84accdf0f991561116550e6c7f1d1494.jpg"
+              alt="Stylish white sneakers"
+            />
+            <div class="card-body">
+              <h3>Urban Street One</h3>
+              <p>Clean everyday sneaker for street style outfits.</p>
+              <button class="card-btn">View Details</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/86/21/6b/86216ba8283d1ce697535cb7aabd52bc.jpg"
+              alt="Sport shoes on wooden floor"
+            />
+            <div class="card-body">
+              <h3>Core Training Pro</h3>
+              <p>Perfect for gym sessions and cross training.</p>
+              <button class="card-btn">View Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- MEN SECTION -->
+      <section class="section" id="men">
+        <div class="section-header">
+          <h2>Men's Collection</h2>
+          <p>Sneakers built for performance and style.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/8c/b3/a9/8cb3a9bf506f0e8e0d08d163e018282b.jpg"
+              alt="Men's sport shoe"
+            />
+            <div class="card-body">
+              <h3>FlexCharge Max</h3>
+              <p>High grip outsole and breathable upper mesh.</p>
+              <button class="card-btn">
+                <a href="./Components/MenProduct.html">Shop Men</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/bc/4d/7c/bc4d7ccc682a2430972ed7dfd3ac3354.jpg"
+              alt="Men casual sneakers"
+            />
+            <div class="card-body">
+              <h3>Everyday Classic</h3>
+              <p>Minimal design, max comfort for all-day wear.</p>
+              <button class="card-btn">
+                <a href="./Components/MenProduct.html">Shop Men</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/8b/af/a2/8bafa2bc5b7a5403ec0d334b9c06aaf8.jpg"
+              alt="Sport running shoes"
+            />
+            <div class="card-body">
+              <h3>SpeedRunner Edge</h3>
+              <p>Designed for long-distance runs and marathons.</p>
+              <button class="card-btn">
+                <a href="./Components/MenProduct.html">Shop Men</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- WOMEN SECTION -->
+      <section class="section" id="women">
+        <div class="section-header">
+          <h2>Women's Collection</h2>
+          <p>Light, stylish and ultra comfortable.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/28/ed/c9/28edc92d0dd9a45cb3a5e12ec04fb9ba.jpg"
+              alt="Women's pink shoes"
+            />
+            <div class="card-body">
+              <h3>Glow Runner</h3>
+              <p>Soft cushioning with elegant pastel colorways.</p>
+              <button class="card-btn">
+                <a href="./Components/FemaleProduct.html">Shop Women</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/02/fb/eb/02fbebfcd1258898c9d6688019f86ac6.jpg"
+              alt="White sneakers on woman"
+            />
+            <div class="card-body">
+              <h3>CloudWalk Lite</h3>
+              <p>Flexible sole that moves naturally with your feet.</p>
+              <button class="card-btn">
+                <a href="./Components/FemaleProduct.html">Shop Women</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/1b/c5/90/1bc5903f3a0269a390e4ca64ad7653ee.jpg"
+              alt="Woman sitting with sneakers"
+            />
+            <div class="card-body">
+              <h3>Street Muse</h3>
+              <p>Mix of sport and fashion for city adventures.</p>
+              <button class="card-btn">
+                <a href="./Components/FemaleProduct.html">Shop Women</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- KIDS SECTION -->
+      <section class="section" id="kids">
+        <div class="section-header">
+          <h2>Kids' Favorites</h2>
+          <p>Fun, colorful and super durable.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/de/fb/19/defb1945a329d61263472131aec49ca4.jpg"
+              alt="Kids shoes on floor"
+            />
+            <div class="card-body">
+              <h3>Mini Sprint</h3>
+              <p>Easy to wear, secure fit for active kids.</p>
+              <button class="card-btn">
+                <a href="./Components/KidsProduct.html">Shop Kids</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/1200x/e1/b2/16/e1b2165f1d2a61d5b442a2a61b3578c0.jpg"
+              alt="Colorful kids sneakers"
+            />
+            <div class="card-body">
+              <h3>ColorPop</h3>
+              <p>Bright colors that kids love to show off.</p>
+              <button class="card-btn">
+                <a href="./Components/KidsProduct.html">Shop Kids</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/5c/82/46/5c82463d217fb0d15d5da72235121c55.jpg"
+              alt="Small shoes on grass"
+            />
+            <div class="card-body">
+              <h3>PlayGround Pro</h3>
+              <p>Extra toe protection for school and playtime.</p>
+              <button class="card-btn">
+                <a href="./Components/KidsProduct.html">Shop Kids</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Brand Column -->
+        <div class="footer-col footer-brand">
+          <h2>FLEXIN<span>.</span></h2>
+          <p
+            style="
+              font-size: 13px;
+              color: var(--footer-gray);
+              line-height: 1.6;
+              max-width: 250px;
+            "
+          >
+            Engineered for motion. Flexin brings you premium athletic wear
+            designed for performance and style.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Custom Styles</a></li>
+            <li><a href="#" style="color: var(--accent-color)">Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Column -->
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Flexin</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2024 Flexin, Inc. All Rights Reserved.
+        </div>
+        <div class="legal-links">
+          <a href="#">Guides</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/navbar.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/theme.js"></script>
+  </body>
+</html>
