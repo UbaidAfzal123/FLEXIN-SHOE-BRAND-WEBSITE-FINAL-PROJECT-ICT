@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <link rel="stylesheet" href="/CSS/theme.css" />
+    <script src="/JS/theme.js"></script>
+    <link rel="shortcut icon" href="download.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="contact-section">
+      <div class="contact-box">
+        <h1>Contact Us</h1>
+        <p>Any questions or remarks? Just write us a message!</p>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter a valid email address"
+              />
+            </div>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Enter your Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" id="text" placeholder="Enter your message:" />
+            </div>
+          </div>
+
+          <button type="button"
+            class="btn-submit"
+            id="submitBtn"
+            onclick="validate()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="bottom-container">
+      <div class="info-row">
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>ABOUT STORE</h3>
+          <p>NEAREST STORE</p>
+          <p>SALE!</p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>PHONE (LANDLINE)</h3>
+          <p>+ 912 3 567 8987</p>
+          <p>+ 912 5 252 3336</p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-map"> </i></div>
+          <h3>OUR OFFICE LOCATION</h3>
+          <p>The Interior Design Studio Company</p>
+          <p>The Courtyard, Al Quoz 1, Colorado, USA</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      function validate() {
+        var btn = document.getElementById("submitBtn");
+        var email = document.getElementById("email").value;
+        var name = document.getElementById("name").value;
+        var text = document.getElementById("text").value;
+
+        if (email == "" || name == "" || text == "") {
+          alert("please fill all fields");
+        } else {
+          btn.addEventListener("click", function () {
+            alert("THANK YOU! OUR REPERENTATIVE WILL CONTACT YOU SOON.");
+            document.body.classList.add("fade-out");
+
+            setTimeout(function () {
+              window.location.href = "index.html";
+            }, 400);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
